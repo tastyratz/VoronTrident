@@ -74,10 +74,10 @@ grab_version(){
 push_config(){
   cd $config_folder
   git pull origin $branch --no-rebase
-  git add .
+  git add *
   current_date=$(date +"%Y-%m-%d %T")
   git commit -m "Autocommit from $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4"
-  git push -u origin $branch
+  git push origin $branch
 }
 
 grab_version

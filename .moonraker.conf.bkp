@@ -73,14 +73,6 @@ channel = stable
 repo = fluidd-core/fluidd
 path = ~/fluidd
 
-[update_manager klipper-macros_Customized_DONOTJUSTUPDATE]
-type = git_repo
-origin = https://github.com/jschuh/klipper-macros.git
-path = ~/printer_data/config/klipper-macros
-primary_branch = main
-is_system_service = False
-managed_services = klipper
-
 [update_manager mobileraker]
 type = git_repo
 path = ~/mobileraker_companion
